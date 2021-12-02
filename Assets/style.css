@@ -14,7 +14,8 @@ textarea{
 }
 
 .custom-card{
-  /* optional custom styles */
+  border-width: 5px;
+  border-radius: 10px;
 }
 
 .jumbotron {
