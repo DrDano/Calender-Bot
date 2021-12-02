@@ -10,12 +10,16 @@ textarea{
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  padding: 7px;
 }
 
 .custom-card{
   border-width: 5px;
   border-radius: 10px;
+}
+
+.custom-div{
+  max-height: 150px
 }
 
 .jumbotron {
