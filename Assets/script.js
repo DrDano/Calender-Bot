@@ -16,8 +16,6 @@ var timeVerify = function () {
 
     for (let i = 0; i < headerArr.length; i++) {
         let currHeader = headerArr[i];
-        // let headerTime = currHeader.textContent;
-        // let hTimeInt = parseInt(headerTime.substring(0, headerTime.length - 2));
         let hTimeInt = parseInt(currHeader.getAttribute('name'));
         
         if (hTimeInt < currHour) {
@@ -28,8 +26,15 @@ var timeVerify = function () {
             $(currHeader).parent().addClass('bg-success')
         }
     }
-    // var thisHeader = $("name[header"+i+"]")
 }
 
 timeVerify();
 
+$('.card-header button').on('click', function() {
+    var currentButton = $(this)
+    var currentDiv = currentButton.closest('.custom-div')
+    var editedText = currentDiv.contents('textarea').val()
+
+    var newListItem = $(`<li class=list-group-item col-4>${editedText}</li>`)
+    newListItem.appendTo(currentDiv.find('ul'))
+});
