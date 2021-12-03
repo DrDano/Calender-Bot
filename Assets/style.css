@@ -30,6 +30,14 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+header {
+  background-image: linear-gradient(rgb(146, 250, 76), rgb(59, 58, 58));
+}
+
+body {
+  background: rgb(59, 58, 58);
+}
+
 .description{
   white-space: pre-wrap;
 }
