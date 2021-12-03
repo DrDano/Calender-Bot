@@ -11,8 +11,7 @@ var displayCurrDay = function () {
 displayCurrDay()
 
 var timeVerify = function () {
-    var currHour = moment().get('hours');
-    console.log(currHour)
+    var currHour = parseInt(moment().format('HH'));
     headerArr = $('.card-header h4');
 
     for (let i = 0; i < headerArr.length; i++) {
@@ -34,6 +33,3 @@ var timeVerify = function () {
 
 timeVerify();
 
-var colorCodeTaskBlock = function () {
-
-}
