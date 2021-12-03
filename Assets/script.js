@@ -33,8 +33,12 @@ timeVerify();
 $('.card-header button').on('click', function() {
     var currentButton = $(this)
     var currentDiv = currentButton.closest('.custom-div')
-    var editedText = currentDiv.contents('textarea').val()
+    var editedText = currentButton.closest('.card').contents('textarea').val()
 
-    var newListItem = $(`<li class=list-group-item col-4>${editedText}</li>`)
-    newListItem.appendTo(currentDiv.find('ul'))
+    var newListItem = $(`<div class=col-4>${editedText}</div>`)
+    newListItem.appendTo(currentDiv.find('#task-list1'))
 });
+
+var saveTasks = function() {
+
+}

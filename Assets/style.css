@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background: rgb(59, 58, 58);
 }
 
 textarea{
@@ -18,10 +19,6 @@ textarea{
   border-radius: 10px;
 }
 
-.custom-div{
-  max-height: 150px
-}
-
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -34,8 +31,8 @@ header {
   background-image: linear-gradient(rgb(146, 250, 76), rgb(59, 58, 58));
 }
 
-body {
-  background: rgb(59, 58, 58);
+ul {
+  list-style-position: inside;
 }
 
 .description{
