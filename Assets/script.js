@@ -11,17 +11,22 @@ var displayCurrDay = function () {
 displayCurrDay()
 
 var timeVerify = function () {
-    var currHour = moment().hour();
+    var currHour = moment().get('hours');
     console.log(currHour)
     headerArr = $('.card-header h4');
 
     for (let i = 0; i < headerArr.length; i++) {
         let currHeader = headerArr[i];
-        let headerTime = currHeader.textContent;
-        let hTimeInt = headerTime.substring(0, headerTime.length - 2)
-        console.log(hTimeInt)
-        if (headerTime === currHour) {
+        // let headerTime = currHeader.textContent;
+        // let hTimeInt = parseInt(headerTime.substring(0, headerTime.length - 2));
+        let hTimeInt = parseInt(currHeader.getAttribute('name'));
+        
+        if (hTimeInt < currHour) {
+            $(currHeader).parent().addClass('bg-secondary')
+        } else if (hTimeInt === currHour) {
             $(currHeader).parent().addClass('bg-danger')
+        } else if (hTimeInt > currHour) {
+            $(currHeader).parent().addClass('bg-success')
         }
     }
     // var thisHeader = $("name[header"+i+"]")
