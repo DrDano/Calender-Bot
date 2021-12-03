@@ -36,7 +36,7 @@ $('.card-header button').on('click', function() {
     var editedText = currentButton.closest('.card').contents('textarea').val()
 
     var newListItem = $(`<div class=col-4>${editedText}</div>`)
-    newListItem.appendTo(currentDiv.find('#task-list1'))
+    newListItem.appendTo(currentDiv.find('ul'))
 });
 
 var saveTasks = function() {
