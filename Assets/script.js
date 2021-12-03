@@ -3,6 +3,8 @@
 // create list items for each saved task with classes of list-item and col-sm-4 col-md-3
 // create function that saves all tasks in task lists to local storage
 
+let savedTasks = {}
+
 var displayCurrDay = function () {
     var currMoment = moment().format('dddd MMMM Do YYYY')
     $("#currentDay").text(currMoment)
@@ -37,8 +39,8 @@ $('.card-header button').on('click', function() {
 
     var newListItem = $(`<div class=col-4>${editedText}</div>`)
     newListItem.appendTo(currentDiv.find('ul'))
+
+    savedTasks[currentButton.closest('.card-header').contents('h4').text()] = editedText
+    localStorage.setItem('ToDo',JSON.stringify(savedTasks))
 });
 
-var saveTasks = function() {
-
-}
