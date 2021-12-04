@@ -41,10 +41,19 @@ $('.card-header button').on('click', function() {
     newListItem.appendTo(currentDiv.find('ul'))
 
     savedTasks[currentButton.closest('.card-header').contents('h4').text()] = editedText
-    localStorage.setItem('ToDo',JSON.stringify(savedTasks))
+    localStorage.setItem(currentButton.closest('.card-header').contents('h4').text(), editedText)
 });
 
-var getTasks = function() {
-    
-}
-
+$('#6AM').val(localStorage.getItem('6AM'))
+$('#7AM').val(localStorage.getItem('7AM'))
+$('#8AM').val(localStorage.getItem('8AM'))
+$('#9AM').val(localStorage.getItem('9AM'))
+$('#10AM').val(localStorage.getItem('10AM'))
+$('#11AM').val(localStorage.getItem('11AM'))
+$('#12AM').val(localStorage.getItem('12AM'))
+$('#1PM').val(localStorage.getItem('1PM'))
+$('#2PM').val(localStorage.getItem('2PM'))
+$('#3PM').val(localStorage.getItem('3PM'))
+$('#4PM').val(localStorage.getItem('4PM'))
+$('#5PM').val(localStorage.getItem('5PM'))
+$('#6PM').val(localStorage.getItem('6PM'))
