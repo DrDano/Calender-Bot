@@ -44,3 +44,7 @@ $('.card-header button').on('click', function() {
     localStorage.setItem('ToDo',JSON.stringify(savedTasks))
 });
 
+var getTasks = function() {
+    
+}
+
