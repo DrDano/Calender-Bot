@@ -1,11 +1,11 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
   background: rgb(59, 58, 58);
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -14,7 +14,7 @@ textarea{
   padding: 7px;
 }
 
-.custom-card{
+.custom-card {
   border-width: 5px;
   border-radius: 10px;
 }
@@ -35,11 +35,11 @@ ul {
   list-style-position: inside;
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
 }
@@ -47,7 +47,7 @@ ul {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
@@ -75,11 +75,11 @@ ul {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #06aed5;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
